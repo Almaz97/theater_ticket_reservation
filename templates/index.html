@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="col-sm-6 col-md-4">
+  <div class="thumbnail">
+    <img src="{{ url_for('static', filename='img/theater.jpg') }}" alt="...">
+    <div class="caption">
+      <h3>Театры</h3>
+
+      <p><a href="/theater" class="btn btn-primary" role="button">Посмотреть</a> </p>
+    </div>
+  </div>
+</div>
+
+<div class="col-sm-6 col-md-4">
+  <div class="thumbnail">
+    <img src="{{ url_for('static', filename='img/spectacle.jpg') }}" alt="...">
+    <div class="caption">
+      <h3>Спектакли</h3>
+
+      <p><a href="/spectacle" class="btn btn-primary" role="button">Посмотреть</a> </p>
+    </div>
+  </div>
+</div>
+
+<div class="col-sm-6 col-md-4">
+  <div class="thumbnail">
+    <img src="{{ url_for('static', filename='img/calendar.jpg') }}" alt="...">
+    <div class="caption">
+      <h3>Спектакли на неделю</h3>
+
+      <p><a href="/calendar" class="btn btn-primary" role="button">Посмотреть</a> </p>
+    </div>
+  </div>
+</div>
+
+
+{% endblock %}
