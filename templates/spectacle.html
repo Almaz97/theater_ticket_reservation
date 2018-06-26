@@ -1,5 +1,12 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<h1>spectacle</h1>
+<center><h1>Спектакли</h1></center>
+{% for spec in specs %}
+  <h3><b><a href="#">Название спектакля</a></b></h3>
+    <h4>{{ spec.title }} </h4>
+  <h3><b>Описание</b></h3>
+    <h4>{{ spec.description }}</h4>
+  <hr>
+{% endfor %}
 {% endblock %}

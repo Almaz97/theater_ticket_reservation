@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% for spec in specs %}
+
+  <h3><b>Название спектакля </b></h3>
+    <h4><a href="/reservation/{{ spec.id }}">{{ spec.title }} </a></h4>
+  <h3><b>Описание</b></h3>
+    <h4>{{ spec.description }}</h4>
+  <hr>
+
+{% endfor %}
+
+{% endblock %}

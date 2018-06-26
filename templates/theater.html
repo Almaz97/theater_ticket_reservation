@@ -1,5 +1,19 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<h1>theater</h1>
+<center><h1>Театры</h1></center>
+
+{% for t in theaters %}
+  <h4><b>Названиие:</b></h3>
+    <p> {{ t.name }} </p>
+  <h4><b>Количество аудиторий:</b></h4>
+    <p> {{ t.am_auditorium }} </p>
+  <h4><b>Адрес:</b></h4>
+    <p> {{ t.address }} </p>
+  <h4><b>Описание:</b></h4>
+    <p> {{ t.description }} </p>
+  <a href="/theater/{{ t.id }}">Посмотреть на спектакли</a>
+  <hr>
+{% endfor %}
+
 {% endblock %}

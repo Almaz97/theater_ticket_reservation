@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<form class="" action="" method="post">
+  <h3><b>Название спектакля </b></h3>
+    <h4>{{ info.title }} </h4>
+  <h3><b>Дата спектакля </b></h3>
+    <h4>{{ date_info.date_time }} </h4>
+  <h3><b>Описание</b></h3>
+    <h4>{{ info.description }}</h4>
+  <label>Введите ваше имя:  </label><input type="text" name="name"><br>
+  <label>Введите ваш номер телефона: </label><input type="text" name="phone"><br>
+  <label>Введите ряд: </label><input type="text" name="row"><br>
+  <label>Введите место: </label><input type="text" name="seat"><br>
+    <button type="submit" name="res">Забронировать билет</button>
+  <hr>
+</form>
+{% endblock %}
